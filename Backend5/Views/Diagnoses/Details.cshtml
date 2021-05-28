@@ -1,0 +1,41 @@
+﻿@model Backend5.Models.Diagnosis
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Diagnosis</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Type)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Type)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Complications)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Complications)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Details)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Details)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Patient)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Patient.Name)
+        </dd>
+    </dl>
+</div>
+<div>
+
+</div>
